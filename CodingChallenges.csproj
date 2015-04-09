@@ -45,13 +45,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amazon.cs" />
+<<<<<<< HEAD
     <Compile Include="BinarySearchTree.cs" />
+=======
+>>>>>>> fd04986efd670f786d09ee2a10233baedad21ef7
     <Compile Include="CodeEval\BitPositions.cs" />
     <Compile Include="CodeEval\FizzBuzz.cs" />
     <Compile Include="CodeEval\MultipleNumbers.cs" />
     <Compile Include="CodeEval\PrimePalindrome.cs" />
     <Compile Include="CodeEval\ReverseWords.cs" />
     <Compile Include="CodeEval\SumOfPrimes.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="HackerRank\WarmUp\AngryProfessor.cs" />
+    <Compile Include="HackerRank\WarmUp\ChocolateFeast.cs" />
+>>>>>>> fd04986efd670f786d09ee2a10233baedad21ef7
     <Compile Include="HackerRank\WarmUp\ConvertToPalindrome.cs" />
     <Compile Include="CrackingTheCodingInterview\Permutation_Chap1-3.cs" />
     <Compile Include="CrackingTheCodingInterview\ReplaceSpacesInString_Chap1-4.cs" />
@@ -61,6 +69,8 @@
     <Compile Include="CrackingTheCodingInterview\UniqueCharacters_Chap1-1.cs" />
     <Compile Include="CustomHashTable.cs" />
     <Compile Include="HackerRank\WarmUp\CutTheSticks.cs" />
+    <Compile Include="HackerRank\WarmUp\FirstDigit.cs" />
+    <Compile Include="HackerRank\WarmUp\HalloweenParty.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="HackerRank\WarmUp\MaximumXOR.cs" />
     <Compile Include="Program.cs" />
@@ -69,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
