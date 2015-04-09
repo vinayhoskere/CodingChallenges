@@ -45,6 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amazon.cs" />
+    <Compile Include="BinarySearchTree.cs" />
+    <Compile Include="CodeEval\BitPositions.cs" />
+    <Compile Include="CodeEval\FizzBuzz.cs" />
+    <Compile Include="CodeEval\MultipleNumbers.cs" />
+    <Compile Include="CodeEval\PrimePalindrome.cs" />
+    <Compile Include="CodeEval\ReverseWords.cs" />
+    <Compile Include="CodeEval\SumOfPrimes.cs" />
     <Compile Include="HackerRank\WarmUp\ConvertToPalindrome.cs" />
     <Compile Include="CrackingTheCodingInterview\Permutation_Chap1-3.cs" />
     <Compile Include="CrackingTheCodingInterview\ReplaceSpacesInString_Chap1-4.cs" />
