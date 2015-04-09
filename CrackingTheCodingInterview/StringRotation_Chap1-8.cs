@@ -7,18 +7,18 @@ namespace CodeEvalChallenges.CrackingTheCodingInterview
 {
     class StringRotation_Chap1_8
     {
-        static void Main(string[] args)
-        {
-            StringRotation_Chap1_8 uc= new StringRotation_Chap1_8();
-            string str1 = "Waterbottle";
-            string str2 = "erbottleWat";
-            //true length
+        //static void Main(string[] args)
+        //{
+        //    StringRotation_Chap1_8 uc= new StringRotation_Chap1_8();
+        //    string str1 = "Waterbottle";
+        //    string str2 = "erbottleWat";
+        //    //true length
 
-            bool arr = uc.StartApplication(str1, str2);
-            Console.WriteLine(arr);
+        //    bool arr = uc.StartApplication(str1, str2);
+        //    Console.WriteLine(arr);
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         private bool StartApplication(string str1, string str2)
         {
