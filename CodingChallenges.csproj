@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amazon.cs" />
+    <Compile Include="BinarySearchTree.cs" />
     <Compile Include="CodeEval\BitPositions.cs" />
     <Compile Include="CodeEval\FizzBuzz.cs" />
     <Compile Include="CodeEval\MultipleNumbers.cs" />
