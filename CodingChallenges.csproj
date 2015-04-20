@@ -51,7 +51,13 @@
     <Compile Include="CodeEval\PrimePalindrome.cs" />
     <Compile Include="CodeEval\ReverseWords.cs" />
     <Compile Include="CodeEval\SumOfPrimes.cs" />
+    <Compile Include="HackerRank\Strings\AlternateCharacters.cs" />
+    <Compile Include="HackerRank\Strings\FunnyStrings.cs" />
+    <Compile Include="HackerRank\Strings\PalindromeConversion.cs" />
+    <Compile Include="HackerRank\Strings\Pangram.cs" />
+    <Compile Include="HackerRank\WarmUp\ACMICPCTeam.cs" />
     <Compile Include="HackerRank\WarmUp\AngryProfessor.cs" />
+    <Compile Include="HackerRank\WarmUp\CavityMap.cs" />
     <Compile Include="HackerRank\WarmUp\ChocolateFeast.cs" />
     <Compile Include="HackerRank\WarmUp\ConvertToPalindrome.cs" />
     <Compile Include="CrackingTheCodingInterview\Permutation_Chap1-3.cs" />
@@ -64,6 +70,8 @@
     <Compile Include="HackerRank\WarmUp\CutTheSticks.cs" />
     <Compile Include="HackerRank\WarmUp\FirstDigit.cs" />
     <Compile Include="HackerRank\WarmUp\HalloweenParty.cs" />
+    <Compile Include="HackerRank\WarmUp\IsFibo.cs" />
+    <Compile Include="HackerRank\WarmUp\ManasaAndStones.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="HackerRank\WarmUp\MaximumXOR.cs" />
     <Compile Include="Program.cs" />

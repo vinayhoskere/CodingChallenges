@@ -12,20 +12,20 @@ namespace CodingChallenges.HackerRank.WarmUp
     /// </summary>
     class ChocolateFeast
     {
-        static void Main(String[] args)
-        {
-            int m;
-            m = int.Parse(Console.ReadLine());
-            for (int i = 0; i < m; i++)
-            {
-                string[] values = Console.ReadLine().Split(' ');
-                int count = int.Parse(values[0]);
-                int price = int.Parse(values[1]);
-                int wrapper = int.Parse(values[2]);
+        //static void Main(String[] args)
+        //{
+        //    int m;
+        //    m = int.Parse(Console.ReadLine());
+        //    for (int i = 0; i < m; i++)
+        //    {
+        //        string[] values = Console.ReadLine().Split(' ');
+        //        int count = int.Parse(values[0]);
+        //        int price = int.Parse(values[1]);
+        //        int wrapper = int.Parse(values[2]);
 
-                Console.WriteLine(TotalCount(count, price, wrapper));
-            }
-        }
+        //        Console.WriteLine(TotalCount(count, price, wrapper));
+        //    }
+        //}
 
         static int TotalCount(int count, int price, int wrapper)
         {
