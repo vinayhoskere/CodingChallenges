@@ -5,6 +5,14 @@ using System.Text;
 
 namespace CodingChallenges
 {
+    /// <summary>
+    /// Also has Depth first search (PreOrder, InOrder, PostOrder) and Breadth first search(Level Order) 
+    /// Time Complexity for all of them is O(n)
+    /// Space Completxity for DFS   O(n) - Worst
+    ///                             O(log n) - Avg
+    /// 
+    /// Space Complexity for BFS    O(n)
+    /// </summary>
     internal class BinarySearchTree
     {
         public interface IBST
@@ -99,7 +107,17 @@ namespace CodingChallenges
             /// </summary>
             public void PrintInOrder()
             {
+                Console.WriteLine("InOrder Traversal");
                 PrintInOrder(root);
+
+                Console.WriteLine("PreOrder Traversal");
+                PrintPreOrder(root);
+
+                Console.WriteLine("PostOrder Traversal");
+                PrintPostOrder(root);
+
+                Console.WriteLine("Level Order Traversal");
+                PrintLevelOrder(root);
             }
 
             private void PrintInOrder(Node node)
@@ -117,6 +135,78 @@ namespace CodingChallenges
                     if (node.Right != null)
                     {
                         PrintInOrder(node.Right);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Tree is empty");
+                }
+            }
+
+            /// <summary>
+            /// Pre Order
+            /// </summary>
+            /// <param name="node"></param>
+            private void PrintPreOrder(Node node)
+            {
+                if (root != null)
+                {
+                    Console.WriteLine(node.key + " ");
+                    if (node.Left != null)
+                    {
+                        PrintPreOrder(node.Left);
+                    }
+                    if (node.Right != null)
+                    {
+                        PrintPreOrder(node.Right);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Tree empty");
+                }
+            }
+
+            /// <summary>
+            /// Post Order
+            /// </summary>
+            /// <param name="node"></param>
+            private void PrintPostOrder(Node node)
+            {
+                if (root != null)
+                {
+                    if (node.Left != null)
+                        PrintPostOrder(node.Left);
+                    if (node.Right != null)
+                        PrintPostOrder(node.Right);
+                    Console.WriteLine(node.key + " ");
+                }
+                else
+                {
+                    Console.WriteLine("Tree is empty");
+                }
+            }
+
+            /// <summary>
+            /// Level Order
+            /// </summary>
+            /// <param name="node"></param>
+            private void PrintLevelOrder(Node node)
+            {
+                if (root != null)
+                {
+                    Queue<Node> queue = null;
+                    if (node != null)
+                        queue.Enqueue(node);
+
+                    while (queue.Any())
+                    {
+                        Node currentNode = queue.Dequeue();
+                        Console.WriteLine(currentNode.key + " ");
+                        if (node.Left != null)
+                            queue.Enqueue(node.Left);
+                        if (node.Right != null)
+                            queue.Enqueue(node.Right);
                     }
                 }
                 else
@@ -375,30 +465,53 @@ namespace CodingChallenges
                     Console.WriteLine("Cannot remove match");
                 }
             }
-        }
 
-        private static void Main(String[] args)
-        {
-            int[] keys = {50, 76, 21, 4, 32, 64, 15, 52, 14, 100, 83, 2, 3, 70, 87, 80};
-            BST mytree = new BST();
-            int input = 0;
-            Console.WriteLine("Before Adding number");
-            mytree.PrintInOrder();
-
-            for (int i = 0; i < keys.Length; i++)
+            /// <summary>
+            /// TIME COMPLEXITY O(n)
+            /// </summary>
+            /// <param name="node"></param>
+            /// <returns></returns>
+            private int FindHeight(Node node)
             {
-                mytree.AddLeaf(keys[i]);
+                //Height of leaf node is always 0, so we need to return -1 if it is a leaf node. 
+                if (node == null)
+                {
+                    return -1;
+                }
+
+                //First find height of the left child
+                int leftHeigh = FindHeight(node.Left);
+
+                //Find height of right child
+                int rightHeigh = FindHeight(node.Right);
+
+                //Max of left and right + 1 (include root)
+                return (leftHeigh > rightHeigh ? leftHeigh : rightHeigh) + 1;
             }
-
-            Console.WriteLine("After Adding number");
-            mytree.PrintInOrder();
-
-            mytree.PrintChildren(mytree.ReturnRootKey());
-
-            mytree.RemoveNode(4);
-            mytree.PrintInOrder();
-
-            Console.ReadKey();
         }
+
+        //private static void Main(String[] args)
+        //{
+        //    int[] keys = {50, 76, 21, 4, 32, 64, 15, 52, 14, 100, 83, 2, 3, 70, 87, 80};
+        //    BST mytree = new BST();
+        //    int input = 0;
+        //    Console.WriteLine("Before Adding number");
+        //    mytree.PrintInOrder();
+
+        //    for (int i = 0; i < keys.Length; i++)
+        //    {
+        //        mytree.AddLeaf(keys[i]);
+        //    }
+
+        //    Console.WriteLine("After Adding number");
+        //    mytree.PrintInOrder();
+
+        //    mytree.PrintChildren(mytree.ReturnRootKey());
+
+        //    mytree.RemoveNode(4);
+        //    mytree.PrintInOrder();
+
+        //    Console.ReadKey();
+        //}
     }
 }
