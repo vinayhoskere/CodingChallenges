@@ -78,6 +78,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="HackerRank\WarmUp\ServiceLaneChallenge.cs" />
     <Compile Include="HackerRank\WarmUp\UtopianTree.cs" />
+    <Compile Include="Recursion.cs" />
+    <Compile Include="Sorting\InsertionSort.cs" />
+    <Compile Include="Sorting\MergeSort.cs" />
+    <Compile Include="Sorting\QuickSort.cs" />
+    <Compile Include="Sorting\SortingMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
