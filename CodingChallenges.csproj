@@ -75,14 +75,19 @@
     <Compile Include="HackerRank\WarmUp\ManasaAndStones.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="HackerRank\WarmUp\MaximumXOR.cs" />
+    <Compile Include="PrimeNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="HackerRank\WarmUp\ServiceLaneChallenge.cs" />
     <Compile Include="HackerRank\WarmUp\UtopianTree.cs" />
     <Compile Include="Recursion.cs" />
-    <Compile Include="Sorting\InsertionSort.cs" />
-    <Compile Include="Sorting\MergeSort.cs" />
-    <Compile Include="Sorting\QuickSort.cs" />
-    <Compile Include="Sorting\SortingMain.cs" />
+    <Compile Include="HackerRank\Strings\BiggestNumber.cs" />
+    <Compile Include="SIG.cs" />
+    <Compile Include="SortingSearching\BinarySearch.cs" />
+    <Compile Include="SortingSearching\InsertionSort.cs" />
+    <Compile Include="SortingSearching\MergeSort.cs" />
+    <Compile Include="SortingSearching\QuickSort.cs" />
+    <Compile Include="SortingSearching\SortingMain.cs" />
+    <Compile Include="SortingSearching\UnsortedArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace CodingChallenges.Sorting
+﻿namespace CodingChallenges.SortingSearching
 {
     class MergeSort
     {
         /// <summary>
         /// Merges the sort algo.
         /// Time Complexity : O(nlogn) 
+        /// Space Complexity : O(n)
         /// </summary>
         /// <param name="arr">The arr.</param>
         /// <param name="n">The n.</param>
@@ -42,8 +38,7 @@ namespace CodingChallenges.Sorting
             Merge(left, right, array);
             return array;
         }
-
-
+        
         private void Merge(int[] left, int[] right, int[] arr)
         {
             int leftLength = left.Length;

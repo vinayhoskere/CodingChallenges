@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
 
-namespace CodingChallenges.Sorting
+namespace CodingChallenges.SortingSearching
 {
     class SortingMain
     {
         private static void Main(string[] args)
         {
             int[] arr = { 3, 2, 7, 1, 6, 5, 10, 12 };
+            int[] sortedArr = { 2, 6, 13, 21, 36, 47, 63, 81, 97 };
             //Random nRandom = new Random();
             //int[] arr = new int[100000];
             //for (int i = 0; i < 100000; i++)
             //{
             //    arr[i] = nRandom.Next(0, 200000);
             //}
-            
+
             Stopwatch st = new Stopwatch();
             TimeSpan ts = new TimeSpan();
 
@@ -38,14 +35,21 @@ namespace CodingChallenges.Sorting
             //PrintArray("Merge Sort", mergeSort, ts.Seconds.ToString());
             //st.Reset();
 
+            //st.Start();
+            //QuickSort qikSort = new QuickSort();
+            //int[] quickSort = qikSort.QuickSortAlgo(arr, arr.Length);
+            //st.Stop();
+            //ts = st.Elapsed;
+            //PrintArray("Quick Sort", quickSort, ts.Seconds.ToString());
+            //st.Reset();
+
             st.Start();
-            QuickSort qikSort = new QuickSort();
-            int[] quickSort = qikSort.QuickSortAlgo(arr, arr.Length);
+            HeapSort heapSort = new HeapSort();
+            int[] hpSort = heapSort.HeapSortAlgo(arr, arr.Length);
             st.Stop();
             ts = st.Elapsed;
-            PrintArray("Quick Sort", quickSort, ts.Seconds.ToString());
+            PrintArray("Heap Sort", hpSort, ts.Seconds.ToString());
             st.Reset();
-
             Console.ReadKey();
         }
 
