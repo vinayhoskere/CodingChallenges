@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amazon.cs" />
+    <Compile Include="AVL\AVLTrees.cs" />
     <Compile Include="BinarySearchTree.cs" />
+    <Compile Include="AVL\BinaryTree.cs" />
     <Compile Include="CodeEval\BitPositions.cs" />
     <Compile Include="CodeEval\FizzBuzz.cs" />
     <Compile Include="CodeEval\MultipleNumbers.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="HackerRank\WarmUp\ManasaAndStones.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="HackerRank\WarmUp\MaximumXOR.cs" />
+    <Compile Include="LRUCache.cs" />
     <Compile Include="PrimeNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="HackerRank\WarmUp\ServiceLaneChallenge.cs" />
@@ -83,11 +86,13 @@
     <Compile Include="HackerRank\Strings\BiggestNumber.cs" />
     <Compile Include="SIG.cs" />
     <Compile Include="SortingSearching\BinarySearch.cs" />
+    <Compile Include="SortingSearching\HeapSort.cs" />
     <Compile Include="SortingSearching\InsertionSort.cs" />
     <Compile Include="SortingSearching\MergeSort.cs" />
     <Compile Include="SortingSearching\QuickSort.cs" />
     <Compile Include="SortingSearching\SortingMain.cs" />
     <Compile Include="SortingSearching\UnsortedArray.cs" />
+    <Compile Include="Stack.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

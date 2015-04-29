@@ -47,8 +47,32 @@ namespace CodingChallenges.SortingSearching
         /// <param name="arr"></param>
         private void SiftDown(int[] arr)
         {
-            int k = arr.Length - 1;
-            arr[0] = arr[k];
+            int k = 0;
+            int left = 2*k + 1;
+
+            while (left < arr.Length)
+            {
+                int max = left;
+                int right = left + 1;
+                //There is a right child, so get the max value to swap 
+                if (right < arr.Length)
+                {
+                    if (arr[right] > arr[left])
+                    {
+                        max++;
+                    }
+                }
+                if (arr[k] < arr[max])
+                {
+                    Swap(arr, k, max);
+                    k = max;
+                    left = 2*k + 1;
+                }
+                else
+                {
+                    break;
+                }
+            }
         }
 
         private void Swap(int[] arr, int first, int second)

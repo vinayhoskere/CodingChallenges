@@ -7,14 +7,14 @@ namespace CodingChallenges
 {
     class SIG
     {
-        private static void Main(string[] args)
-        {
-           //int[] a = { 1, 2, 3, 4, 5 };
-            int a = 12;
-            int b = 56;
-            Solution(a, b);
-            Console.WriteLine("");
-        }
+        //private static void Main(string[] args)
+        //{
+        //   //int[] a = { 1, 2, 3, 4, 5 };
+        //    int a = 12;
+        //    int b = 56;
+        //    Solution(a, b);
+        //    Console.WriteLine("");
+        //}
 
         private static int Solution(int a, int b)
         {
