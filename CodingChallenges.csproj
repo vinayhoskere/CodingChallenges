@@ -54,6 +54,7 @@
     <Compile Include="CodeEval\PrimePalindrome.cs" />
     <Compile Include="CodeEval\ReverseWords.cs" />
     <Compile Include="CodeEval\SumOfPrimes.cs" />
+    <Compile Include="DijkstrasShortestPath.cs" />
     <Compile Include="HackerRank\Strings\AlternateCharacters.cs" />
     <Compile Include="HackerRank\Strings\FunnyStrings.cs" />
     <Compile Include="HackerRank\Strings\PalindromeConversion.cs" />

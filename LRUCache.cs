@@ -160,18 +160,18 @@ namespace CodingChallenges
 
     public class LeastRecentlyUsedCache
     {
-        private static void Main(string[] args)
-        {
-            int[] pageOrder = {1, 2, 3, 5, 4, 2, 3, 2, 5, 6};
-            int i = 0;
-            LRUCache<int, int> lru = new LRUCache<int, int>(4);
+        //private static void Main(string[] args)
+        //{
+        //    int[] pageOrder = {1, 2, 3, 5, 4, 2, 3, 2, 5, 6};
+        //    int i = 0;
+        //    LRUCache<int, int> lru = new LRUCache<int, int>(4);
 
-            while (i < 10)
-            {
-                Console.WriteLine("Page requested " + pageOrder[i]);
-                lru.LRU_Cache(lru.entries, pageOrder[i], pageOrder[i]);
-                i++;
-            }
-        }
+        //    while (i < 10)
+        //    {
+        //        Console.WriteLine("Page requested " + pageOrder[i]);
+        //        lru.LRU_Cache(lru.entries, pageOrder[i], pageOrder[i]);
+        //        i++;
+        //    }
+        //}
     }
 }
