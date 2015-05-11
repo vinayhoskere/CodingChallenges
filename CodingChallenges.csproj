@@ -54,9 +54,13 @@
     <Compile Include="CodeEval\PrimePalindrome.cs" />
     <Compile Include="CodeEval\ReverseWords.cs" />
     <Compile Include="CodeEval\SumOfPrimes.cs" />
+    <Compile Include="Design\Allergy.cs" />
     <Compile Include="DijkstrasShortestPath.cs" />
     <Compile Include="HackerRank\Strings\AlternateCharacters.cs" />
+    <Compile Include="HackerRank\Strings\ConvertFirstToAnagram.cs" />
     <Compile Include="HackerRank\Strings\FunnyStrings.cs" />
+    <Compile Include="HackerRank\Strings\GemStones.cs" />
+    <Compile Include="HackerRank\Strings\MakeItAnagram.cs" />
     <Compile Include="HackerRank\Strings\PalindromeConversion.cs" />
     <Compile Include="HackerRank\Strings\Pangram.cs" />
     <Compile Include="HackerRank\WarmUp\ACMICPCTeam.cs" />
@@ -83,6 +87,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="HackerRank\WarmUp\ServiceLaneChallenge.cs" />
     <Compile Include="HackerRank\WarmUp\UtopianTree.cs" />
+    <Compile Include="ReadFromFile.cs" />
     <Compile Include="Recursion.cs" />
     <Compile Include="HackerRank\Strings\BiggestNumber.cs" />
     <Compile Include="SIG.cs" />
